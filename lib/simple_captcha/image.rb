@@ -83,7 +83,7 @@ module SimpleCaptcha #:nodoc
         end
         params << "jpeg:-"
 
-        SimpleCaptcha::Utils::run("convert", params.join(' '))
+        SimpleCaptcha::Utils::run("magick", params.join(' '))
       end
   end
 end
