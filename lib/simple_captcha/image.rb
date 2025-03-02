@@ -4,7 +4,7 @@ module SimpleCaptcha #:nodoc
 
     mattr_accessor :image_styles
     @@image_styles = {
-      'embosed_silver'  => ['-fill darkblue', '-shade 20x60', '-background white'],
+      'embosed_silver'  => ['-fill darkblue', '-background white'],
       'simply_red'      => ['-fill darkred', '-background white'],
       'simply_green'    => ['-fill darkgreen', '-background white'],
       'simply_blue'     => ['-fill darkblue', '-background white'],
