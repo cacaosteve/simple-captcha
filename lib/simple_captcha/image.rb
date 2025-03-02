@@ -81,7 +81,7 @@ module SimpleCaptcha #:nodoc
         if SimpleCaptcha.noise and SimpleCaptcha.noise > 0
           params << "-evaluate Uniform-noise #{SimpleCaptcha.noise}"
         end
-        params << "jpeg:-"
+        params << "png:-"
 
         SimpleCaptcha::Utils::run("magick", params.join(' '))
       end

@@ -60,7 +60,7 @@ module SimpleCaptcha
           #body = generate_simple_captcha_image(code)
           #headers['Content-Type'] = 'image/jpeg'
 
-          send_data(generate_simple_captcha_image(code), :type => 'image/jpeg', :disposition => 'inline', :filename =>  'simple_captcha.jpg')
+          send_data(generate_simple_captcha_image(code), :type => 'image/png', :disposition => 'inline', :filename =>  'simple_captcha.png')
         else
           [status, headers, body]
         end
